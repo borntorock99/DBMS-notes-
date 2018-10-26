@@ -57,8 +57,28 @@ pitfalls lock based protocols
 
 neither t2 nor t4 can make progress executing lock -s (b) couses t4 to wait to t2 to relase its lock b while excutiig=ng lock -x (A)cuases t2 to wait for to realsease its lock onm a are ..
 
+deadlock ===
 
 
+starvations --- badly needing of data intems is termed as not getting the data items ...
+
+two phase looking protocol --
+
+1. this is protocol insures conflict sentiazable schedules(also called 2 pl )  ---> its means if theri are n number of solution then transaction will get the lock in one phase and will change the other when theri will be no value for it to be changed 
+
+
+
+pahse 1 -- growing phase 
+	transacton may be obtain locks 
+phase 2 -- shrinking phase 
+	transaction may be released locks 
+	may not obtain the locks
+	
+two phase looking does not ensrue freedom from deadlocks 
+cascading roll block cannot be removed by 2 pl 
+
+
+regress method --- 
 
 
 
